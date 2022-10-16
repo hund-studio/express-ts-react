@@ -1,3 +1,5 @@
 # test
 
-A minimal boilerplate for an Express app /w React + Typescript
+Express app /w React + Typescript
+
+Ideal for single page Webapps without need for complex functionalities.
