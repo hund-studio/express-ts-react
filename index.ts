@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import * as dotenv from "dotenv";
+import { SSRApp } from "./frontend/app";
 
 dotenv.config();
 
@@ -19,6 +20,10 @@ app.set("view engine", "ejs");
  */
 app.get("/", (request, response, next) => {
 	response.status(200).json({ message: "welcome" });
+});
+
+app.get("/app", (request, response, next) => {
+	response.render("index", { ssr: SSRApp });
 });
 
 app.listen(port, () => {

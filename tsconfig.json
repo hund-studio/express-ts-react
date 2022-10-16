@@ -1,14 +1,11 @@
 {
 	"compilerOptions": {
 		"sourceMap": true,
-		"outDir": "dist",
 		"strict": true,
-		"lib": ["esnext"],
+		"lib": ["ESNext", "DOM"],
 		"esModuleInterop": true,
-		"target": "es2015",
-		"moduleResolution": "Node"
-	},
-	"ts-node": {
-		"files": true
+		"target": "ES2015",
+		"moduleResolution": "Node",
+		"jsx": "react-jsx"
 	}
 }

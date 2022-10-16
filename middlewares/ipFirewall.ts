@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import createHttpError from "http-errors";
-import { allowedIps } from "../config/security";
+
+const allowedIps: string[] = [];
 
 const ipFirewall = (
 	request: Request,

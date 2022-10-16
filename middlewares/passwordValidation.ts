@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import createHttpError from "http-errors";
-import { passphrase } from "../config/security";
+
+const passphrase = "";
 
 const passwordValidation = (
 	request: Request,
