@@ -1,14 +1,14 @@
 {
 	"name": "express-ts-react",
 	"version": "1.0.0",
-	"description": "",
+	"description": "A minimal boilerplate for an Express app /w React + Typescript",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"client": "rimraf public/dist && webpack --watch --config frontend/webpack.config.js",
 		"server": "nodemon index.ts",
 		"bundle:client": "rimraf public/dist && webpack --config frontend/webpack.config.js",
-		"bundle:server": "rimraf dist && webpack",
+		"bundle:server": "rimraf bundle && webpack",
 		"build": "npm run bundle:client && npm run bundle:server"
 	},
 	"keywords": [],
