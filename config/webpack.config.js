@@ -8,7 +8,7 @@ module.exports = {
 	mode: "production",
 	resolve: {
 		modules: ["node_modules"],
-		extensions: [".tsx", ".ts", ".scss"],
+		extensions: [".tsx", ".ts", ".scss", ".svg"],
 	},
 	module: {
 		rules: [
@@ -20,6 +20,11 @@ module.exports = {
 			{
 				test: /\.s[ac]ss$/i,
 				use: ["style-loader", "css-loader", "sass-loader"],
+			},
+			{
+				test: /\.svg$/i,
+				issuer: /\.[jt]sx?$/,
+				use: [{ loader: "@svgr/webpack", options: { typescript: true } }],
 			},
 		],
 	},
