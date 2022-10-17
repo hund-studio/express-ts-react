@@ -4,6 +4,8 @@
 		"lib": ["DOM"],
 		"target": "ESNext",
 		"rootDirs": ["./", "../"],
-		"jsx": "react-jsx"
+		"jsx": "react-jsx",
+		"baseUrl": ".",
+		"paths": {}
 	}
 }

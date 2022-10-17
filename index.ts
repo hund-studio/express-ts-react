@@ -3,6 +3,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import * as dotenv from "dotenv";
 import { SSRApp } from "./frontend/app";
+import path from "path";
 
 dotenv.config();
 
@@ -12,7 +13,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 app.set("trust proxy", true);
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 
 /**

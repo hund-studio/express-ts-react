@@ -6,6 +6,8 @@
 		"esModuleInterop": true,
 		"target": "ES2015",
 		"moduleResolution": "Node",
-		"jsx": "react-jsx"
+		"jsx": "react-jsx",
+		"baseUrl": "./frontend",
+		"paths": {}
 	}
 }
