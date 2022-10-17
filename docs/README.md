@@ -16,6 +16,7 @@ Check out [express-ts](https://github.com/hund-ernesto/express-ts) for an Expres
 git clone git@github.com:hund-ernesto/express-ts-react.git
 cd express-ts-react
 rm -r .git
+npm install
 ```
 
 4. If needed init as new repository
