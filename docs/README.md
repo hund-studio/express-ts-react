@@ -15,7 +15,8 @@ Check out [express-ts](https://github.com/hund-ernesto/express-ts) for an Expres
 ```bash
 git clone git@github.com:hund-ernesto/express-ts-react.git
 cd express-ts-react
-rm -r .git
+sudo rm -r .git
+mv ./../express-ts-react my-project
 npm install
 ```
 
