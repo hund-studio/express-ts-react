@@ -32,3 +32,13 @@ git push --force origin master
 ## Database
 
 If your app needs a database consider using [Prisma](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres) with a sqLite solution.
+
+```tree
+..express-ts-react::
+.
+|--prisma
+   `--schema.prisma
+|--public
+|--views
+`--index.ts
+```
