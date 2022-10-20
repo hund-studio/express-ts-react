@@ -1,14 +1,15 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-module.exports = (target) => {
+module.exports = (target, mode) => {
 	return {
+		mode,
 		optimization: {
-			minimize: true,
+			minimize: mode !== "production" ? false : true,
 		},
 		devtool: "source-map",
 		resolve: {
 			modules: ["node_modules"],
-			extensions: [".tsx", ".ts", ".scss", ".svg"],
+			extensions: [".js", ".tsx", ".ts", ".scss", ".svg"],
 		},
 		plugins: [new MiniCssExtractPlugin()],
 		infrastructureLogging: {
@@ -18,7 +19,9 @@ module.exports = (target) => {
 			rules: [
 				{
 					test: /\.tsx?$/,
-					use: "ts-loader",
+					use: {
+						loader: "ts-loader",
+					},
 					exclude: /node_modules/,
 				},
 				{

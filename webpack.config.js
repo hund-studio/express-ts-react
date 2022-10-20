@@ -6,7 +6,7 @@ const { merge } = require("webpack-merge");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 module.exports = (env, argv) =>
-	merge(commonConfig(env.target), {
+	merge(commonConfig(env.target, argv.mode), {
 		target: "node",
 		externals: [nodeExternals()],
 		entry: path.join(__dirname, "index.ts"),
