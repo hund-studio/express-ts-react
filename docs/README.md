@@ -30,9 +30,24 @@ git commit -m "initial commit"
 git push --force origin master
 ```
 
+## Ui
+
+If you don't know where to start in order to setup your project UI you can take inspiration from [our starter](https://github.com/hund-studio/ui).
+
+In order to import UI component with ease we suggests you to update both your `./tsconfig.json` and `./frontend/tsconfig.json` by updating your `paths` option as follows
+
+```json
+...
+"paths": {
+   ...
+   "@ui/*": ["ui/*"]
+}
+...
+```
+
 ## Database
 
-If your app needs a database consider using [Prisma](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres) with a sqLite solution.
+If your app needs a database consider using [Prisma](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres) with a sqLite solution and setup it inside the `root` of your project.
 
 ```tree
 ..express-ts-react::
