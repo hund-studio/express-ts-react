@@ -1,4 +1,4 @@
-# express-ts-react
+# 📦 express-ts-react
 
 A minimal boilerplate for an Express app /w React + Typescript
 
