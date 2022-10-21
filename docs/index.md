@@ -10,13 +10,13 @@ Check out [express-ts](https://github.com/hund-ernesto/express-ts) for an Expres
 
 ### Setup
 
-#### Using Github template
+#### [Method 1] Using Github template
 
 You can easily clone this starter as a new repository in your Github account by using the green button on top right of the [Github Repo](https://github.com/hund-studio/express-ts-react)
 
 ![use-template-button](./assets/use-template-button.svg)
 
-#### Manually cloning this repository
+#### [Method 2] Manually cloning this repository
 
 1. Clone this repository
 2. Delete existing `.git` folder
