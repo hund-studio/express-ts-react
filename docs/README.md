@@ -84,19 +84,19 @@ npm install
 
 Finally run you application using `pm2` or `node` command (try avoid `nodemon` and `npm run serve` inside production environments).
 
-## Ui
+## UI
 
-If you don't know where to start in order to setup/organize your project UI you can take inspiration from [our starter](https://github.com/hund-studio/ui).
+If you don't know where to start in order to setup/organize your project UI you can clone [our starter UI template](https://github.com/hund-studio/ui).
 
 To import UI components with ease, we suggest you to update both your `./tsconfig.json` and `./frontend/tsconfig.json` by updating your `paths` value as follows:
 
 ```json
-...
+// ...
 "paths": {
-   ...
+   // ...
    "@ui/*": ["ui/*"]
 }
-...
+// ...
 ```
 
 ## Database
