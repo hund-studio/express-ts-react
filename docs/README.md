@@ -12,9 +12,9 @@ Check out [express-ts](https://github.com/hund-ernesto/express-ts) for an Expres
 
 #### Using Github template
 
-![use-template-button](./assets/use-template-button.png)
-
 You can easily clone this starter as a new repository in your Github account by using the green button on top right of the [Github Repo](https://github.com/hund-studio/express-ts-react)
+
+![use-template-button](./assets/use-template-button.png)
 
 #### Manually cloning this repository
 
