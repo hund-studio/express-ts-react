@@ -27,7 +27,6 @@ git clone git@github.com:hund-ernesto/express-ts-react.git
 mv express-ts-react my-project
 cd my-project
 sudo rm -r .git
-npm install
 ```
 
 4. If needed, and strongly recommended, `init` a new repository
@@ -41,6 +40,12 @@ git push --force origin master
 ```
 
 ### Develop
+
+Before proceed you must install all required `node_module` by running:
+
+```bash
+npm install
+```
 
 This app uses different webpack configurations for `client` and `server` compilation to make it most compatible with any kind of package (such as Prisma and others which may require additional native bindings). In order to start development you will need to start two different tasks **in 2 different terminal windows**.
 
