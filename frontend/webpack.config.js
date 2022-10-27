@@ -8,7 +8,7 @@ module.exports = (env, argv) =>
 		target: "web",
 		entry: path.join(__dirname, "index.tsx"),
 		output: {
-			path: path.join(__dirname, "../bundle/server/public/dist"),
+			path: path.join(__dirname, "../bundle/public/dist"),
 			filename: "client.js",
 		},
 		resolve: {

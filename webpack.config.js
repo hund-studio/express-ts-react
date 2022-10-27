@@ -1,8 +1,8 @@
-const path = require("path");
-const nodeExternals = require("webpack-node-externals");
-const FileManagerPlugin = require("filemanager-webpack-plugin");
-const commonConfig = require("./config/webpack.config");
 const { merge } = require("webpack-merge");
+const commonConfig = require("./config/webpack.config");
+const FileManagerPlugin = require("filemanager-webpack-plugin");
+const nodeExternals = require("webpack-node-externals");
+const path = require("path");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 module.exports = (env, argv) =>
@@ -34,19 +34,19 @@ module.exports = (env, argv) =>
 						copy: [
 							{
 								source: path.join(__dirname, "views"),
-								destination: path.join(__dirname, "bundle/server/views"),
+								destination: path.join(__dirname, "bundle/views"),
 							},
 							{
 								source: path.join(__dirname, "public"),
-								destination: path.join(__dirname, "bundle/server/public"),
+								destination: path.join(__dirname, "bundle/public"),
 							},
 							{
 								source: path.join(__dirname, "package.json"),
-								destination: path.join(__dirname, "bundle/server/package.json"),
+								destination: path.join(__dirname, "bundle/package.json"),
 							},
 							{
 								source: path.join(__dirname, ".env"),
-								destination: path.join(__dirname, "bundle/server/.env"),
+								destination: path.join(__dirname, "bundle/.env"),
 							},
 						],
 					},

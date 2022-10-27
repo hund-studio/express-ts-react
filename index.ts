@@ -4,6 +4,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import createHttpError from "http-errors";
 import express from "express";
+import packageJSON from "./package.json";
 import path from "path";
 
 dotenv.config(); // load data from .env file
@@ -57,5 +58,5 @@ app.get("/", (request, response, next) => {
  */
 
 app.listen(port, () => {
-	console.log(`⚡ application is running on port ${port}.`);
+	console.log(`⚡ ${packageJSON.name} is running on port ${port}.`);
 });

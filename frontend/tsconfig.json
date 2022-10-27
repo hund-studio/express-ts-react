@@ -3,12 +3,12 @@
 	"extends": "../tsconfig.json",
 	"compilerOptions": {
 		// transpilation settings
-		"target": "ESNext",
 		"lib": ["DOM"],
+		"target": "ESNext",
 
 		// filesystem
-		"rootDirs": ["./", "../"],
 		"baseUrl": ".",
-		"paths": {}
+		"paths": {},
+		"rootDirs": ["./", "../"]
 	}
 }

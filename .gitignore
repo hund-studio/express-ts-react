@@ -2,5 +2,4 @@
 .env
 **/.DS_store
 bundle
-dist
 node_modules

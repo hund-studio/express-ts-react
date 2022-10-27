@@ -8,7 +8,7 @@
 		"watch:client": "webpack --watch --mode=development --env target=client --config frontend/webpack.config.js",
 		"watch:server": "webpack --watch --mode=development --env target=server --config webpack.config.js",
 		"watch": "rimraf bundle && concurrently \"npm run watch:client\" \"npm run watch:server\"",
-		"serve": "nodemon bundle/server/index.js",
+		"serve": "nodemon bundle/index.js",
 		"bundle:client": "webpack --mode=production --config frontend/webpack.config.js",
 		"bundle:server": "webpack --mode=production",
 		"build": "rimraf bundle && npm run bundle:client && npm run bundle:server"
