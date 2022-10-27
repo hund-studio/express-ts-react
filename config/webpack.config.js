@@ -14,7 +14,7 @@ module.exports = (target, mode) => {
 		plugins: [new MiniCssExtractPlugin()],
 		infrastructureLogging: {
 			level: "error",
-		},
+		}, // reduce webpack logging when using concurrently
 		module: {
 			rules: [
 				{
