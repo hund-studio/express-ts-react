@@ -4,7 +4,7 @@ A minimal boilerplate for an Express app /w React + Typescript
 
 Ideal for single page Webapps without need for complex functionalities.
 
-Check out [express-ts](https://github.com/hund-ernesto/express-ts) for an Express without React solution.
+Check out [express-ts](https://github.com/hund-studio/express-ts) for an Express without React solution.
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ You can easily clone this starter as a new repository in your Github account by 
 3. Install npm modules with `npm install`
 
 ```bash
-git clone git@github.com:hund-ernesto/express-ts-react.git
+git clone git@github.com:hund-studio/express-ts-react.git
 mv express-ts-react my-project
 cd my-project
 sudo rm -r .git
@@ -75,7 +75,7 @@ To deploy your app you must `build` it for production by running:
 npm run build
 ```
 
-The `build` task will generate a `./bundle/server` folder inside your `root` directory.
+The `build` task will generate a `./bundle` folder inside your `root` directory.
 Upload the `server` folder on you production machine and, using SSH or watherver you prefer, install all required `node_modules` by running:
 
 ```bash
