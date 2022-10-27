@@ -1,6 +1,6 @@
 # Keep environment variables out of version control
-node_modules
 .env
-dist
-bundle
 **/.DS_store
+bundle
+dist
+node_modules

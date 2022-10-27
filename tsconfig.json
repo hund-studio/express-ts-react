@@ -1,12 +1,20 @@
 {
 	"compilerOptions": {
-		"sourceMap": true,
-		"strict": true,
-		"lib": ["ESNext", "DOM"],
-		"esModuleInterop": true,
-		"target": "ES2015",
-		"moduleResolution": "Node",
+		// transpilation settings
 		"jsx": "react-jsx",
+		"lib": ["ESNext", "DOM"],
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"target": "ESNext",
+
+		// dev tools
+		"sourceMap": true,
+
+		// features configuration
+		"esModuleInterop": true,
+		"strict": true,
+
+		// filesystem
 		"baseUrl": "./frontend",
 		"paths": {}
 	}

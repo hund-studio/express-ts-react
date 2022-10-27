@@ -8,10 +8,16 @@ const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 module.exports = (env, argv) =>
 	merge(commonConfig(env.target, argv.mode), {
 		target: "node",
+		node: {
+			__dirname: true,
+		},
+		experiments: {
+			topLevelAwait: true,
+		},
 		externals: [nodeExternals()],
 		entry: path.join(__dirname, "index.ts"),
 		output: {
-			path: path.join(__dirname, "bundle/server"),
+			path: path.join(__dirname, "bundle"),
 			filename: "index.js",
 		},
 		resolve: {
