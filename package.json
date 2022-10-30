@@ -1,8 +1,11 @@
 {
 	"name": "express-ts-react",
 	"version": "1.0.0",
-	"description": "A minimal boilerplate for an Express app /w React + Typescript",
 	"main": "index.js",
+	"author": "hund snc",
+	"description": "Express /w SSR Enabled React + Typescript starter",
+	"keywords": [],
+	"license": "ISC",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"watch:client": "webpack --watch --mode=development --env target=client --config frontend/webpack.config.js",
@@ -13,9 +16,6 @@
 		"bundle:server": "webpack --mode=production",
 		"build": "rimraf bundle && npm run bundle:client && npm run bundle:server"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
 	"devDependencies": {
 		"@svgr/webpack": "^6.5.0",
 		"@types/cors": "^2.8.12",
