@@ -21,6 +21,7 @@ module.exports = (env, argv) =>
 			filename: "index.js",
 		},
 		resolve: {
+			extensions: [".js", ".tsx", ".ts", ".scss"],
 			plugins: [
 				new TsconfigPathsPlugin({
 					configFile: path.join(__dirname, "tsconfig.json"),
