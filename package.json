@@ -1,6 +1,6 @@
 {
 	"name": "express-ts-react",
-	"version": "1.0.0",
+	"version": "0.1.0-alpha",
 	"main": "index.js",
 	"author": "hund snc",
 	"description": "Express /w SSR Enabled React + Typescript starter",

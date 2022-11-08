@@ -1,5 +1,7 @@
 # 📦 express-ts-react
 
+![version](https://img.shields.io/github/package-json/v/hund-studio/express-ts-react)
+
 A minimal boilerplate for an Express app /w React + Typescript
 
 Ideal for single page Webapps without need for complex functionalities.
