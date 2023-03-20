@@ -8,10 +8,10 @@
 	"license": "ISC",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"watch:client": "webpack --watch --mode=development --env target=client --config frontend/webpack.config.js",
-		"watch:server": "webpack --watch --mode=development --env target=server --config webpack.config.js",
+		"watch:client": "webpack --watch --stats=minimal --mode=development --env target=client --config frontend/webpack.config.js",
+		"watch:server": "webpack --watch --stats=minimal --mode=development --env target=server --config webpack.config.js",
 		"watch": "rimraf bundle && concurrently \"npm run watch:client\" \"npm run watch:server\"",
-		"serve": "nodemon bundle/index.js",
+		"serve": "concurrently \"npm run watch:client\" \"cd bundle && nodemon index.js\"",
 		"bundle:client": "webpack --mode=production --config frontend/webpack.config.js",
 		"bundle:server": "webpack --mode=production",
 		"build": "rimraf bundle && npm run bundle:client && npm run bundle:server"
@@ -28,6 +28,7 @@
 		"css-loader": "^6.7.1",
 		"filemanager-webpack-plugin": "^7.0.0",
 		"mini-css-extract-plugin": "^2.6.1",
+		"nodemon": "^2.0.21",
 		"sass": "^1.55.0",
 		"sass-loader": "^13.1.0",
 		"style-loader": "^3.3.1",

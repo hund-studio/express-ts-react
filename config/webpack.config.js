@@ -9,7 +9,7 @@ module.exports = (target, mode) => {
 		devtool: "source-map",
 		resolve: {
 			modules: ["node_modules"],
-			extensions: [".js", ".tsx", ".ts", ".scss", ".svg"],
+			extensions: [".js", ".tsx", ".ts", ".scss", "css", ".svg"],
 		},
 		plugins: [new MiniCssExtractPlugin()],
 		infrastructureLogging: {
